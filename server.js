@@ -1,4 +1,3 @@
-// server.js
 const express = require('express');
 const mongoose = require('mongoose');
 
@@ -16,7 +15,7 @@ mongoose.set('debug', true);
 
 app.use(require('./routes'));
 
-// Add a route to handle the root URL
+
 app.get('/', (req, res) => {
   res.send('Welcome to the Social Network API');
 });
